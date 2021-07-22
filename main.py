@@ -1,6 +1,6 @@
 import json
 from Sf import Sf
-
+from Mb import Mb
 
 def elaborateGEOJson(shapeName):
     shapeFile = Sf(shapeName)
@@ -11,4 +11,8 @@ def elaborateGEOJson(shapeName):
 
 
 if __name__ == '__main__':
-    elaborateGEOJson('ABI4TERAMO000000')
+    #elaborateGEOJson('ABI4TERAMO000000')
+    m = Mb()
+    #m.createEmptyDataset()
+    #m.addFeatures('ckrewixon6slb20nzaq97u1ir', 'ABI4TERAMO000000')
+    #m.uploadDataset('ABI4TERAMO000000')
